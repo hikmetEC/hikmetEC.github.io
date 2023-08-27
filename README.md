@@ -1,42 +1,71 @@
-# John Doe - Portfolio
+# Particle Jekyll Theme
 
-## About Me
+![](./particle.jpg)
 
-I am a passionate web developer with a focus on front-end technologies. My journey in the world of coding started during my college days when I built my first website.
+This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
-## Skills
+The Theme features:
 
-- HTML5
-- CSS3
-- JavaScript
-- React
-- Git
+- Gulp
+- SASS
+- Sweet Scroll
+- Particle.js
+- BrowserSync
+- Font Awesome and Devicon icons
+- Google Analytics
+- Info Customization
 
-## Projects
+## Basic Setup
 
-### Project 1: Portfolio Website
+1. [Install Jekyll](http://jekyllrb.com)
+2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
+3. Edit `_config.yml` to personalize your site.
 
-A personal portfolio website showcasing my skills and projects.
+## Site and User Settings
 
-[View Project](https://github.com/yourusername/portfolio)
+You have to fill some informations on `_config.yml` to customize your site.
 
-### Project 2: E-commerce Website
+```
+# Site settings
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
 
-Built a responsive e-commerce website using React and CSS Grid.
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: Anon Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+```
 
-[View Project](https://github.com/yourusername/e-commerce-project)
+**Don't forget to change your url before you deploy your site!**
 
-### Project 3: Weather App
+## Color and Particle Customization
+- Color Customization
+  - Edit the sass variables
+- Particle Customization
+  - Edit the json data in particle function in app.js
+  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
 
-A weather app that fetches data from an API and displays current weather conditions.
+## Running the blog in local
 
-[View Project](https://github.com/yourusername/weather-app)
+In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-## Resume
+- Install [NodeJS](https://nodejs.org/)
+- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
+- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
+- Install dependencies: `yarn`
+- Run: `gulp`
 
-Download my resume: [Download PDF](/assets/resume.pdf)
+## License
 
-## Contact
+This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
 
-Feel free to reach out to me at john.doe@email.com.
+## Credits
 
+This theme was partially designed with the inspiration from these fine folks
+- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
